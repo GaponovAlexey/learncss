@@ -16,14 +16,26 @@ html {
 }
 *,*::before,*::after {
   box-sizing: inherit;
+  background-color: #757475;
 }
 
-.App {
-  background-color: red;
-  text-align: center;
-  width: 20vmin, 100vmax;
+.exemple {
+  padding: 80px 0;
+  background-color: chocolate;
 }
-.app2 {
-  background-color: burlywood;
-  padding: 3vmin;
+.exemple__conteier {
+  padding: 0px 15px;
+  margin: 0px auto;
+  max-width: 65.625rem;
+  position: relative;
+}
+.exemple__conteier::before {
+  content: '';
+  background: url('./images/decor.svg') 0 0 / 100% no-repeat;
+  position: absolute;
+  right: 0;
+  width: 15.57%;
+  padding-top: 22.95%;
+  top: 50%;
+  transform: translate(50%, -50%);
 }
